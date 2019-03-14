@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  digitaco.jobs:
+    image: ${DOCKER_REGISTRY}digitacojobs
+    build:
+      context: .
+      dockerfile: Digitaco.Jobs/Dockerfile
